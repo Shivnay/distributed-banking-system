@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/default.css">
+    <title>SomeBank &middot; ATM</title>
+    <!-- Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/6b9cadc34e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="custome-modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="loading">
+                    <h2 class="margin-auto">ATM | <span class="badge badge-primary">SomeBank Fiji</span></h2>
+                </div>
+                <div class="prompt hidden">
+                    <h5 class="alert"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <h2>ATM | <span class="badge badge-primary">SomeBank Fiji</span></h2>
+            <div class="menu">
+                <a href="#Content-Slide" role="button" data-slide-to="0">Features</a>
+                <a href="#Content-Slide" role="button" data-slide-to="1">Instructions</a>
+                <a href="#Content-Slide" role="button" data-slide-to="2">ATM</a>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div id="Content-Slide" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1 class="display-4">SomeBank ATM,</h1>
+                        <p class="lead">Welcome to SomeBank Fiji Online ATM, Our bank services include a complete rich set of features, Complete your transactions and leave everything to us. </p>
+                        <div class="row"> 
+                            <div class="col-sm-3">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h1><span class="icon"><i class="fas fa-piggy-bank"></i></span></h1>
+                                    <h5 class="card-title">Deposit</h5>
+                                    <p class="card-text">Deposit Money into your SomeBank Account with ease.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h1><span class="icon"><i class="fas fa-credit-card"></i></span></h1>
+                                    <h5 class="card-title">Withdrawal</h5>
+                                    <p class="card-text">Need Money? Withdraw Cash Anytime With No Service Fee</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h1><span class="icon"><i class="fas fa-wallet"></i></span></h1>
+                                    <h5 class="card-title">My Balance</h5>
+                                    <p class="card-text">Want to Check Your Balance? No Problem, Check it Anytime for Free</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card">
+                                <div class="card-body">
+                                    <h1><span class="icon"><i class="fas fa-dollar-sign"></i></span></h1>
+                                    <h5 class="card-title">Energy Fiji Limited (EFL) Payment</h5>
+                                    <p class="card-text">Need to Pay Your Bill's? Pay Your Bills Securely.</p>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="display-4">Instructions</h1>
+                        <div class="row">
+                            <div class="col-sm-4"><img src="img/Intrsution-1.png" alt="Instruction 1" /></div>
+                            <div class="col-sm-4"><img src="img/Intrsution-2.png" alt="Instruction 2" /></div>
+                            <div class="col-sm-4"><img src="img/Intrsution-3.png" alt="Instruction 3" /></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <form method="POST">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                        <h1 class="display-4">ATM</h1>
+                                        <p class="lead">Enter your transaction amount and select your prefered transaction method.</p>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input id="feild" type="number" name="account" class="form-control" placeholder="Account Number" aria-label="Username" aria-describedby="basic-addon1" required>
+                                    </div>
+                                    <div class="input-group mb-3 form-control-amount">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                                        </div>
+                                        <input id="feild" type="number" name="amount" min="10" placeholder="Transaction Amount" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">.00</span>
+                                        </div>
+                                    </div> 
+                                    <div class="input-group mb-3 form-control-meternumber">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-tachometer-alt"></i></span>
+                                        </div>
+                                        <input id="feild" type="text" name="meterNumber" placeholder="Meter Number" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                                    </div> 
+                                    <div class="input-group mb-3 form-control-paymentvendor">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-store-alt"></i></span>
+                                        </div>
+                                        <input id="feild" type="text" name="paymentVendor" placeholder="Payment Vendor" class="form-control" aria-label="Amount (to the nearest dollar)" required>
+                                    </div> 
+                                    <div class="form-controls">
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                        <button id="Clear" class="btn-success-border">Clear</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 from-control-transaction-type">
+                                    <div class="row">
+                                        <div class="col-sm-6"><button id="transaction-type" value="Deposit" name="Transaction" class="btn top-left">Deposit</button></div>
+                                        <div class="col-sm-6"><button id="transaction-type" value="Withdrawal" name="Transaction" class="btn top-right">Withdraw</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6"><button id="transaction-type" value="Balance" name="Transaction" class="btn bottom-left">Balance</button></div>
+                                        <div class="col-sm-6"><button id="transaction-type" value="Payment" name="Transaction" class="btn bottom-right">Payment</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <p class="text-black-50">&copy;SomeBank Fiji (2019). All Rights Reserved</p>
+        </footer>
+    </div>
+    <div class="notification-modal">
+        <div class="notification-header">
+            <h3 class="btn-close"><span><i class="fas fa-times"></i></span></h3>
+        </div>
+        <div class="notification-state">
+            <h1 class="status-success"><span><i class="fas fa-check-circle"></i></span></h1>
+            <h1 class="status-failed"><span><i class="fas fa-exclamation-circle"></i></span></h1>
+        </div>
+        <div class="notification-body"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="JS/service.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>

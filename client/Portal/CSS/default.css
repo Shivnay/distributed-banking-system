@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #d6e7f1 url("../Img/tapa.png");
+    width: 100vw;
+    overflow: hidden;
+}
+h1,p { text-align: center;}
+body > .container{
+    /* display: none; */
+}
+.background-grapic{
+    position: absolute;
+    transform: rotate(45deg);
+    width: 500px;
+    height: 500px;
+
+}
+.hidden{
+    opacity: 0;
+}
+.from-control-active {
+    box-shadow: 5px 5px 5px lightgray;
+}
+.margin-auto{
+    margin: auto;
+}
+.custome-modal{
+    position: absolute;
+    z-index: 1;
+}
+.modal-content{
+    border-radius: unset;
+    border: unset;
+    background: #d6e7f1 url("../Img/tapa.png") fixed;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    transition: .5s ease-out;
+}
+.modal-body{
+    margin: 15% auto auto auto;
+    text-align: center;
+    max-width: 450px;
+    padding: unset;
+    width: 100vw;
+    overflow: hidden;
+}
+.loading{
+    padding: 10px;
+    background: white;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 93%;
+    margin: 10px auto;
+    box-shadow: 5px 5px 10px grey;
+}
+.loading span{
+    -moz-animation-name: loading;
+    -webkit-animation-name: loading;
+    animation-name: loading;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+@keyframes loading{
+    0%{background: #1e90ff;}
+    50%{background: rgb(221, 221, 221);}
+    100%{background: dodgerblue;}
+}
+.prompt h5 {
+    font-size: 12pt;
+    width: 93%;
+    margin: auto;
+    box-shadow: 5px 5px 10px grey;
+    text-align: center;
+    -moz-transition: 1s ease-out;
+    -webkit-transition: 1s ease-out;
+    transition: .5s ease-in;
+}
+.container{
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+}
+.navbar h2 {
+    flex: 1;
+}
+.navbar .menu{
+    flex: 1;
+}
+nav{
+    height: 10vh;
+    border-bottom: 2px soild black;
+}
+.container nav h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+nav .menu{
+    text-align: center;
+}
+.menu a{
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    font-size: 12pt;
+    margin: 0;
+    transition: .5s;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.menu a:hover{
+    background: rgba(30, 144, 255, .5);
+}
+a:hover{
+    text-decoration: none;
+}
+
+.jumbotron{
+    margin-bottom: unset;
+    padding-top: 30px;
+    height: 80vh;
+}
+
+.card .card-body{
+    text-align: center;
+}
+.icon{
+    color: dodgerblue;
+}
+footer{
+    height: 10vh;
+}
+#Content-Slide{
+    height: 80vh;
+}
+
+form {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+form > .row > .col-sm-6 {
+    padding: 5px;
+    text-align: center;
+}
+form .row{
+    /* background: rgba(139, 139, 139, 0.5); */
+    margin: 0;
+    padding: 0;
+}
+form .col-sm-6{
+    /* background: rgba(150, 123, 123, 0.5); */
+    margin: 0;
+    padding: 0;
+}
+form input[type="number"], form input[type="text"] {
+    height: 50px;
+}
+form button[name="Transaction"] {
+    border-radius: unset;
+    padding: 10px;
+    width: 100%;
+    height: 230px;
+    margin: 0;
+}
+.form-controls {
+    display: flex;
+    margin: auto;
+    width: 200px;
+    transition: 1s ease-out;
+}
+.form-controls button {
+    text-transform: capitalize;
+    font-size: 12pt;
+    margin: 0;
+    flex: 1;
+    border-radius: 0px;
+    padding: 10px;
+}
+.btn-success-border {
+    border: 2px solid seagreen;
+    color: black;
+    background: transparent;
+}
+.btn { 
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s ease-out;
+}
+.top-left, .bottom-right{
+    color: black;
+    background: white;
+}
+.top-left {
+    border-right: 2px solid lavender; 
+    border-bottom: 2px solid lavender;
+}
+.top-right {
+    border-bottom: 2px solid lavender;
+}
+.bottom-left {
+    border-right: 2px solid lavender;
+}
+.top-left:hover, .bottom-right:hover{
+    background: dodgerblue;
+    color:  white;
+}
+.top-right, .bottom-left {
+    background: white;
+    color: black;
+}
+.top-right:hover, .bottom-left:hover {
+    background: dodgerblue;
+    color: white;   
+}
+.notification-modal {
+    position: absolute;
+    width: 300px;
+    min-height: 180px;
+    background: rgb(245, 245, 245);
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 5px;
+    top: 65vh;
+    left: 100vw;
+    transition: .5s ease-out;
+}
+.notification-state h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.status-success {
+    font-size: 50px;
+    color: seagreen;
+}
+.status-failed {
+    font-size: 50px;
+    color: firebrick;
+}
+.notification-body {
+    padding: 15px 0px;
+    text-align: center;
+}
+.btn-close {
+    margin: 5px;
+    text-align: end;
+}
+
+.btn-close span {
+    font-size: 20pt;
+    margin-right: 5px;
+    color: dodgerblue;
+    transition: .25s ease-in-out;
+}
+.btn-close span:hover {
+    color: rgb(93, 174, 255);
+    cursor: pointer;
+}
+footer {
+    background: white;
+    text-align: center;
+    padding: 5px;
+}
